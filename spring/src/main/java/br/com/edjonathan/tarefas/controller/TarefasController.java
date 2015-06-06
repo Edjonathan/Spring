@@ -17,8 +17,8 @@ public class TarefasController {
 	@RequestMapping("adicionaTarefa")
 	public String adiciona(Tarefa tarefa)
 	{
-		JdbcTarefaDao dao = new JdbcTarefaDao();
-		dao.adiciona(tarefa);
+//		JdbcTarefaDao dao = new JdbcTarefaDao();
+//		dao.adiciona(tarefa);
 		return "tarefa/tarefa-adicionada";
 	}
 }
