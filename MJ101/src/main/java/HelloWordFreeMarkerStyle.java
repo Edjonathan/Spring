@@ -13,7 +13,7 @@ public class HelloWordFreeMarkerStyle {
 		
 		Configuration configuration = new Configuration();
 		configuration.setClassForTemplateLoading(HelloWordFreeMarkerStyle.class, "/");
-		Template helloTemplate = configuration.getTemplate("C:/Users/Guedes/workspace/MJ101/target/MJ101-0.0.1-SNAPSHOT/WEB-INF/");
+		Template helloTemplate = configuration.getTemplate("hello.ftl");
 		StringWriter writter  = new StringWriter();
 		Map<String,Object>helloMap = new HashMap<String, Object>();
 		helloMap.put("name","Freemarker");
