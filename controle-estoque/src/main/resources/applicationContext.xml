@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="
+	   		http://www.springframework.org/schema/beans 
+	   		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<!-- Wiring por construtor -->
+	
+	<bean id="gerenciadorProduto" class="br.edjonathan.treinamentos.estoque.controller.GerenciadorDeProdutos">
+		<constructor-arg ref="produtoDao" />
+	</bean>
+	
+	<!-- Wiring por setter -->
+	
+	<!-- bean id="gerenciadorProduto" class="br.edjonathan.treinamentos.estoque.GerenciadorDeProduto">
+		<ref bean="produtoDao" />
+	</bean-->
+	
+	
+	<bean id="produtoDao" class="br.edjonathan.treinamentos.estoque.dao.ProdutoMemoriaDAO"/>
+
+</beans>
